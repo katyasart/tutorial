@@ -8,6 +8,7 @@ namespace Food
         public static void Main(string[] args)
         {
             Console.WriteLine("Start!");
+            Console.WriteLine();
 
             // Создать список продуктов
             var productList = new List<Product>();
@@ -41,7 +42,9 @@ namespace Food
             // Вывести н экран
 
             //Console.WriteLine(productList);
-            ProductPresenter.PrintProducts(productList);
+            ProductPresenter.PrintProducts(productList); // печать не меняя регистра
+            Console.WriteLine();
+            ProductPresenter.PrintProducts(productList, true); // печать в верхнем регистре
 
             // Подождать нажатия клавиши
 

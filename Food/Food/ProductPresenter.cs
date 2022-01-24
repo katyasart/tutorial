@@ -5,13 +5,18 @@ namespace Food
 {
     public static class ProductPresenter
     {
-        public static void PrintProducts(List<Product> products)
+        public static void PrintProducts(List<Product> products, bool isUpper = false)
         {
             foreach (var product in products)
             {
-                Console.WriteLine($"{product.Name} {product.Color} {product.Price}");
+                var s = $"{product.Name} | {product.Color} | {product.Price}";
+                if (isUpper == true)
+                {
+                    s = s.ToUpper();
+                }
+                
+                Console.WriteLine(s);
             }
         }
-    }    
+    }
 }
-
