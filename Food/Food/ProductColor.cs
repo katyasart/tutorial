@@ -1,10 +1,11 @@
-namespace Food;
-
-public enum ProductColor
+namespace Food
 {
-    Red,
-    Blue,
-    White,
-    Orange,
-    Green
+    public enum ProductColor
+    {
+        Red,
+        Blue,
+        White,
+        Orange,
+        Green
+    }
 }
